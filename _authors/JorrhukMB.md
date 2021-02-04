@@ -2,6 +2,7 @@
 name: JorrhukMB
 username: JorrhukMB
 bio: "Just an ordinary high school student."
+site: https://jorrhukmb.github.io/
 avatar: JorrhukMB.png
 email: jorrhukmb0546@gmail.com
 social:
