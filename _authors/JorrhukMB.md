@@ -1,9 +1,9 @@
 ---
-name: JorrhukMB
-username: JorrhukMB
+name: jorrhukmb
+username: jorrhukmb
 bio: "Just an ordinary high school student."
 site: https://jorrhukmb.github.io/
-avatar: JorrhukMB.png
+avatar: jorrhukmb.png
 email: jorrhukmb0546@gmail.com
 social:
 

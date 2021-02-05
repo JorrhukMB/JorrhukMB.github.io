@@ -2,21 +2,14 @@
 layout: post
 title:  "Hello, Blog!"
 summary: "First article of my blog, nothing important."
-author: JorrhukMB
+author: jorrhukmb
 date: '2021-02-04 15:42:00 +0800'
 category: chat
 thumbnail: /assets/img/posts/Banner1.jpg
 keywords: hello world, hello, test, begin, jekyll, hexo, github, blog
 usemathjax: false
 permalink: /blog/hello-blog/
-
 ---
-<style>
-p{
-	color : #F9ECEC;
-	margin-bottom: .5rem;
-}
-</style>
 
 文章我無法用英文寫，我弱QQ
 

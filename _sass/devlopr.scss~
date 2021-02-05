@@ -99,6 +99,9 @@ html[data-theme="light"] {
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
+p {
+    margin-bottom: 0.1rem;
+}
 * {
     margin: 0;
     padding: 0;
