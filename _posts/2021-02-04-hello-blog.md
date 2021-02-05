@@ -5,7 +5,7 @@ summary: "First article of my blog, nothing important."
 author: jorrhukmb
 date: '2021-02-04 15:42:00 +0800'
 category: chat
-thumbnail: /assets/img/posts/Banner1.jpg
+thumbnail: /assets/img/posts/Kawaii1.gif
 keywords: hello world, hello, test, begin, jekyll, hexo, github, blog
 usemathjax: false
 permalink: /blog/hello-blog/
