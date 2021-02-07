@@ -43,13 +43,13 @@ $\vec{a}=(x_1,y_1),\vec{b}=(x_2,y_2)$
 
   設 $\theta$ 為 $\vec{a},\vec{b}$ 夾角
 
-  $\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cdot \cos(\theta)=x_1x_2+y_1y_2$
+  $\vec{a}\cdot\vec{b}=\lvert\vec{a}\rvert\lvert\vec{b}\rvert\cdot \cos(\theta)=x_1x_2+y_1y_2$
 
 - 向量外積 (Cross product) : 
 
   這個108課綱沒教到，所以我沒有到很清楚，以下可能會講錯
 
-  $\vec{a}\times\vec{b}=|\vec{a}||\vec{b}|\cdot\sin(\theta)=x_1y_2-x_2y_1$
+  $\vec{a}\times\vec{b}=\lvert\vec{a}\rvert\lvert\vec{b}\rvert\cdot\sin(\theta)=x_1y_2-x_2y_1$
 
   *幾何意義* : 跟行列式一樣 (還是他們其實是同個東西..?) 可以算出**凸多邊形的面積**
 
@@ -61,23 +61,61 @@ $\vec{a}=(x_1,y_1),\vec{b}=(x_2,y_2)$
 
 ### 模板
 
+整數 : 
+
 ```cpp
 using ll = long long;
 struct Point{
     ll x, y;
     Point(ll _x = 0, ll _y = 0) : x(_x), y(_y) {}
-    Point operator + (const Point& b) const { return Point(x+b.x, y+b.y); }
-    Point operator - (const Point& b) const { return Point(x-b.x, y-b.y); }
-    Point operator * (const ll     v) const { return Point( x*v ,  y*v ); }
-    Point operator / (const ll     v) const { return Point( x/v ,  y/v ); }
-    ll    operator * (const Point& b) const { return x*b.x + y*b.y; } // Dot Product
-    ll    operator ^ (const Point& b) const { return x*b.y - b.x*y; } // Cross Porduct
-    double dist() { return sqrt(x*x+y*y); }		// vector magnitude
-    double angle() { return atan2(x,y); }		// direction angle
-    friend ostream& operator << (ostream& os, const Point& a) { os << a.x << ' ' << a.y; }
-    friend istream& operator >> (istream& is, Point& a) { is >> a.x >> a.y; }
-}
+    Point operator+(const Point& b)const{return Point(x+b.x, y+b.y);}
+    Point operator-(const Point& b)const{return Point(x-b.x, y-b.y);}
+    Point operator*(const ll     v)const{return Point( x*v ,  y*v );}
+    Point operator/(const ll     v)const{return Point( x/v ,  y/v );}
+    ll    operator*(const Point& b)const{return x*b.x + y*b.y; } // Dot Product
+    ll    operator/(const Point& b)const{return x*b.y - b.x*y; } // Cross Porduct
+    bool operator <(const Point& b)const{
+        if(x == b.x) return y < b.y;
+        return x < b.x;                                                                                                         
+    }
+    double dist()const{return sqrt(x*x+y*y);}		// vector magnitude
+    double angle()const{return atan2(y,x);}		// direction angle
+    friend ostream& operator<<(ostream& os, const Point& a){os<<a.x<<' '<<a.y;}
+    friend istream& operator>>(istream& is, Point& a){is>>a.x>>a.y;}
+};
 ```
+
+浮點數 : 
+
+```cpp
+const double EPS=1e-12;
+const double PI=acos(-1);
+struct Point{
+    double x,y;
+    Point(double _x = 0,double _y = 0): x(_x), y(_y){}
+    Point operator+(const Point& b)const{return Point(x+b.x, y+b.y);}
+    Point operator-(const Point& b)const{return Point(x-b.x, y-b.y);}
+    Point operator*(const double v)const{return Point( x*v ,  y*v );}
+    Point operator/(const double v)const{return Point( x/v ,  y/v );}
+    double operator*(const Point& b)const{return x*b.x+y*b.y;}
+    double operator^(const Point& b)const{return x*b.y-y*b.x;}
+    bool operator<(const Point& b)const{
+        if(fabs(x-b.x) < EPS){
+            if(fabs(y-b.y) < EPS) return 0;
+            return y<b.y;
+        }
+        return x<b.x;
+    }
+    double dist()const{return sqrt(x*x+y*y);}
+    double angle()const{return atan2(y,x);}
+    Point rotate(double v)const{return Point(x*cos(v)-y*sin(v),x*sin(v)+y*cos(v));}
+    Point unit(){return (*this)/dist();}
+    friend ostream& operator<<(ostream& os, const Point& a){os<<a.x<<' '<<a.y;}
+    friend istream& operator>>(istream& is, Point& a){is>>a.x>>a.y;}
+};
+```
+
+
 
 ---
 
@@ -98,7 +136,7 @@ bool inter(Point A, Point B, Point C, Point D){
     if(max(C.x, B.x) < min(A.x, B.x)) return false;
     if(max(A.y, B.y) < min(C.y, D.y)) return false;
     if(max(C.y, D.y) < min(A.y, B.y)) return false;
-    if(ng((B-A)^(C-A)) * ng((B-A)^(D-A)) < 0 && ng((D-C)^(A-C)) * ng((D-C)^(B-C)) < 0) return true;
+    if(ng((B-A)^(C-A))*ng((B-A)^(D-A)) < 0 && ng((D-C)^(A-C))*ng((D-C)^(B-C)) < 0) return true;
     return false;
 }
 ```
@@ -139,9 +177,9 @@ bool on_side(Point C, Point A, Point B){
 - $\vec{AB}$ 與凸多邊形交點個數為**奇數** $\Rightarrow$ 裡面
 - $\vec{AB}$ 與凸多邊形交點個數為**偶數** $\Rightarrow$ 外面
 
-但延伸的 $\vec{AB}$ 有可能會跟凸多邊形的點相交，這樣就會爛掉
+但延伸的 $\vec{AB}$ 有可能會跟凸多邊形的頂點相交，這樣就會爛掉
 
-但若凸多邊形的點都在整數點上，那麼者要把 $\vec{AB}$ 設為 $(x_A+\infty, y_A+1)$就不會發生這種情況了
+但若凸多邊形的頂點都在整數點上，那麼只要把 $\vec{AB}$ 設為 $(x_A+\infty, y_A+1)$就不會發生這種情況了
 
 ---
 
