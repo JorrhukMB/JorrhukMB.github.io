@@ -46,7 +46,7 @@ a^b \mod p
 $$
 若 $a,p$ 互質，則相當於
 $$
-a^{(b\mod p)} \mod p
+a^{(b\mod (p-1))} \mod p
 $$
 
 
