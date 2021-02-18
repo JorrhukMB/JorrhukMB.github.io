@@ -48,7 +48,7 @@ html[data-theme="light"] {
      /* Dark Mode */
     html,
     html[data-theme="dark"] {
-        --bold-color: rgb(255, 255, 255);
+        --bold-color: rgb(255, 250, 250);
         --box-background-color: hsl(0, 0%, 20%);
         --highlight-color: hsl(0, 0%, 60%);
         --light-border-color: hsl(0, 0%, 30%);
