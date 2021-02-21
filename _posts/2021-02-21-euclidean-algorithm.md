@@ -23,7 +23,7 @@ permalink: /blog/euclidean/
 
 $$
 \gcd(a,b)=\gcd(a-b, b),\quad a>b\\
-\rightarrow\gcd(a,b)=gcd(a\%b, b), \quad a>b
+\rightarrow\gcd(a,b)=gcd(a\space mod\space b, b), \quad a>b
 $$
 
 ---
@@ -60,13 +60,19 @@ $$
 
 根據歐幾里得算法
 $$
-\gcd(a,b)=\gcd(a\%b, b),\quad a>b
+\gcd(a,b)=\gcd(a\space mod \space b, b),\quad a>b
 $$
 ###### (下面有一部分是抄 wiki 的，因為我不知道要怎麼講得更淺顯易懂)
 
 第 $i$ 步帶餘除法得到的商為 $q_i$，餘數為 $r_{i+1}$，我們可以寫成下面的形式
+$$
+r_0=a\\
+r_1=b\\
+\vdots\\
+r_{i+1} = r_{i-1} - q_i r_i\quad \text{and}\quad 0\leq r_{i+1} < \lvert r_i \rvert\\
+\vdots
+$$
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/47f5faad419bbd4c3d301d0c74bc1f11196850e8)
 
 當某步得到的 $r_{i+1} = 0$ 時，計算結束，上一步得到的 $r_i$ 即為 $a,b$ 的 $\gcd$
 
@@ -119,20 +125,22 @@ $g$ 為 $\gcd(a,n)$
 
 ---
 
-**若 $g = 1$**
+**若 $g = 1$** ， $a^{-1}$ 存在
 
-$a^{-1}$ 存在
+
 $$
 a x + n y = 1\\
 \rightarrow a x \equiv 1 \pmod n
 $$
+
+
 即得 $a^{-1} = x$
 
 ---
 
-**若 $g \neq 1$**
+**若 $g \neq 1$** ，$a^{-1}$ 不存在
 
-$a^{-1}$ 不存在
+
 $$
 \because a x + n y \neq 1\\
 \therefore ax \neq 1 \pmod n
