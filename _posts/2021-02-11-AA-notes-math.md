@@ -4,11 +4,23 @@ title:  "AA競程同好會-數論"
 summary: "參加AA競程同好會學到的一些東西"
 author: jorrhukmb
 date: '2021-02-11 14:24:00 +0800'
-category: notes
+category: ['notes', 'math', 'modulo']
 thumbnail: /assets/img/posts/Kawaii2.gif
 keywords: blog, AA, dreamoon, math, fermat, modulo
 usemathjax: true
 permalink: /blog/AA-notes-math/
+---
+
+---
+
+
+
+###### Edited : 2021/03/01
+
+關於費馬小定理推廣及證明，請見 [Euler's Totient Function/Theorem](/blog/Euler)
+
+
+
 ---
 
 
@@ -97,3 +109,4 @@ $$
 x\cdot y^{p-2}\mod p
 $$
 **注意!!**  $a$ 的模逆元存在 若且唯若 $a,p$ 互質
+
