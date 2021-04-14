@@ -1,0 +1,2209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jorrhukmb's Website</title>
+    <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 14 Apr 2021 10:37:41 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Apr 2021 10:37:41 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+
+    
+      <item>
+        <title>AA競程特製班 Week 1</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://hackmd.io/2Q7pvp76QDyvMELpJ7SK2g&quot;&gt;AA 特製班 Week 1複習&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;因為是付錢上的課，所以內容不公開&lt;/p&gt;
+
+&lt;p&gt;如果你是dreamoon 或是同班同學，可以敲我要權限&lt;/p&gt;
+
+&lt;p&gt;都不是的話…可以donate我，視金額數量決定要不要給 XDD&lt;/p&gt;
+
+&lt;p&gt;BTC Wallet : 1MCwQ9qp9SgEwdFsC7v9HsW9DMyErBk3eT&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;..\assets\img\crypto_wallets\bitcoin.png&quot; alt=&quot;Your_Bitcoin_QR_Code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ETH Wallet : 0x7FCF16D40FCcF59e884a89f1a2640bbdb61CBEBE&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;..\assets\img\crypto_wallets\ethereum.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Apr 2021 06:45:00 +0000</pubDate>
+        <link>/blog/AA-notes-CP-Week1/</link>
+        <guid isPermaLink="true">/blog/AA-notes-CP-Week1/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/03/21</title>
+        <description>&lt;h1 id=&quot;20210321&quot;&gt;2021/03/21&lt;/h1&gt;
+
+&lt;p&gt;我好弱QQ&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=149&quot;&gt;UVa213 - Message Decoding&lt;/a&gt; 這題格式有點麻煩，自己搞了 2 個小時還RE，就直接看詳解&lt;/p&gt;
+
+&lt;p&gt;我原本是把所有輸入存起來再去離線做他&lt;/p&gt;
+
+&lt;p&gt;看了詳解才學會新技能&lt;/p&gt;
+
+&lt;p&gt;用 getchar 一個一個輸入不就好了QQ，然後讀到換行再特別處理一下&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;readchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'\n'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'\r'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;readstr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 21 Mar 2021 11:47:00 +0000</pubDate>
+        <link>/blog/diary-6/</link>
+        <guid isPermaLink="true">/blog/diary-6/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/03/19</title>
+        <description>&lt;p&gt;紀錄一下基本的東西，&lt;/p&gt;
+
+&lt;p&gt;將 index $i\space(-N\leq i &amp;lt; N)$ 變成在範圍 $[ 0, N )$ 的方法 :&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;範圍 $[A, B)$，就先平移到 $[0,B-A)$ 之後再把 $A$ 加回去&lt;/p&gt;
+
+&lt;p&gt;設 $N = B-A$&lt;/p&gt;
+
+&lt;h6 id=&quot;nba--沒-我笑點滴&quot;&gt;NBA (( 沒 我笑點滴&lt;/h6&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 19 Mar 2021 11:47:00 +0000</pubDate>
+        <link>/blog/diary-5/</link>
+        <guid isPermaLink="true">/blog/diary-5/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/03/17</title>
+        <description>&lt;p&gt;結果我高估自己了 本來以為前面很簡單 可以快速把題刷掉&lt;/p&gt;
+
+&lt;p&gt;然而並沒有QQ&lt;/p&gt;
+
+&lt;p&gt;現在要兼顧課業 還要搞什麼破歷史報告&lt;/p&gt;
+
+&lt;p&gt;時間不夠啦啊啊啊&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;20210317&quot;&gt;2021/03/17&lt;/h1&gt;
+
+&lt;p&gt;今天幹了啥&lt;/p&gt;
+
+&lt;p&gt;學了以前沒碰過的 qsort&lt;/p&gt;
+
+&lt;p&gt;雖然說一班來說直接用 sort 就好了，而且還更快更好寫&lt;/p&gt;
+
+&lt;p&gt;但就還是學一下ㄅ&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;qsort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;size_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;size_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comparator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;base&lt;/code&gt; : pointer of an array&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num&lt;/code&gt; : elements to be sorted&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;size&lt;/code&gt; : sizeof(…)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;comparator&lt;/code&gt; : self written compare function&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// return value:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// positive if a &amp;gt; b&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 0        if a == b&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// negative if a &amp;lt; b&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;沒了QQ 先讀書去&lt;/p&gt;
+
+&lt;p&gt;讀完就可以繼續了&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Mar 2021 09:04:00 +0000</pubDate>
+        <link>/blog/diary-4/</link>
+        <guid isPermaLink="true">/blog/diary-4/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/03/13</title>
+        <description>&lt;p&gt;經歷這一兩個月在AA競程、IOI Camp、TOI初選的洗鍊&lt;/p&gt;
+
+&lt;p&gt;我覺得我需要從頭把基礎打得更好一點&lt;/p&gt;
+
+&lt;p&gt;所以我打算要把 «算法競賽入門經典 (第二版) » 這本書從頭好好的看一遍&lt;/p&gt;
+
+&lt;p&gt;先訂個目標 : &lt;strong&gt;在這個學期結束前把這本讀完&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;但礙於學業的壓力，我也不能確定我能不能好好在時限內達成&lt;/p&gt;
+
+&lt;h1 id=&quot;20210313&quot;&gt;2021/03/13&lt;/h1&gt;
+
+&lt;h2 id=&quot;今日目標--把第5章以前都看完習題做完&quot;&gt;今日目標 : 把第5章以前都看完、習題做完&lt;/h2&gt;
+
+&lt;p&gt;習題的部分我會視難度決定要不要實作&lt;/p&gt;
+
+&lt;h2 id=&quot;收穫&quot;&gt;收穫&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在這本的附錄中，介紹了一些環境的開發跟用法
+學會了簡單又快速對拍 script
+&lt;a href=&quot;/blog/match-script&quot;&gt;Linux對拍shell script&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ㄍㄋㄋ&lt;a href=&quot;https://onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=4&amp;amp;page=show_problem&amp;amp;problem=163&quot;&gt;UVa227&lt;/a&gt; 甚麼破格式&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 13 Mar 2021 08:00:00 +0000</pubDate>
+        <link>/blog/diary-3/</link>
+        <guid isPermaLink="true">/blog/diary-3/</guid>
+      </item>
+    
+      <item>
+        <title>Linux對拍shell script</title>
+        <description>&lt;p&gt;天啊好久沒碰競程了，開學後能練的時間變得超少，最近總算有時間可以練了@@&lt;/p&gt;
+
+&lt;p&gt;TOI 的心得文等我心血來潮的時候再寫吧ww&lt;/p&gt;
+
+&lt;p&gt;回歸主題&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;對拍&quot;&gt;對拍&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;對拍&lt;/strong&gt;是一種debug的方法，用來找會讓你程式 WA 的測資&lt;/p&gt;
+
+&lt;p&gt;直接用 shell script 來解釋&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+	./r &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; input
+	./a &amp;lt; input &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; output.a
+	./b &amp;lt; input &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; output.b
+	diff output.a output.b
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ne&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fi
+done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./r&lt;/code&gt; 是生成隨機測資的程式&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./a&lt;/code&gt; 是輸出正確的code&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./b&lt;/code&gt; 是找不到bug的code&lt;/p&gt;
+
+&lt;p&gt;之後比較 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;output.a&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;output.b&lt;/code&gt; 不一樣的就break&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;使用的時機像是&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./a&lt;/code&gt; 是確認輸出會對 但會TLE，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./b&lt;/code&gt; 找不到 bug&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 13 Mar 2021 03:50:00 +0000</pubDate>
+        <link>/blog/match-script/</link>
+        <guid isPermaLink="true">/blog/match-script/</guid>
+      </item>
+    
+      <item>
+        <title>Euler's Totient Function/Theorem</title>
+        <description>&lt;h1 id=&quot;eulers-totient-function&quot;&gt;Euler’s Totient Function&lt;/h1&gt;
+
+&lt;p&gt;歐拉函數 $\varphi(n)$ 是小於等於 $n$ 中與 $n$ 互質的數的個數&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;lemma&quot;&gt;Lemma&lt;/h2&gt;
+
+&lt;p&gt;若 $p$ 為質數&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;$\varphi(p) = p-1$&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;若 $n\in\mathbb{Z^+}$，$\varphi(p^n) = p^n(1-{1\over p})$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;若 $a = p_1^{\alpha_1}p_2^{\alpha_2}\dots p_n^{\alpha_n}$ 是 a 的標準分解式，則&lt;/p&gt;
+
+\[\varphi(a) = a(1-{1\over p_1})(1-{1\over p_2})\dots(1-{1\over p_n})\]
+  &lt;/li&gt;
+  &lt;li&gt;若 $\gcd(a,b)=1$ ， 則 $\varphi(ab)=\varphi(a)\varphi(b)$&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;proof&quot;&gt;Proof&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;很顯然，小於等於 $p$ 的數，只有 $p$ 與 $p$ 不互質&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;與 $p^n$ 不互質的數為 $p$ 的倍數，而不超過 $p^n$ 且為 $p$ 的倍數有 $p^n\over p$ 個，&lt;/p&gt;
+
+    &lt;p&gt;故 $\varphi(p^n) = p^n-{p^n\over p} = p^n(1-{1\over p})$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;因為不超過 $a$ 且為 $p_1$ 的倍數的正整數共有 $a\over p_1$ 個，分別為&lt;/p&gt;
+
+    &lt;p&gt;\(1p_1, 2p_1, 3p_1, \dots, {a\over p_1}p_1\)
+所以不超過 $a$ 且與 $p_1$ 互質的個數為 $a - {a\over p_1} = a(1-{1 \over p_1})$。&lt;/p&gt;
+
+    &lt;p&gt;因為不超過 $a$ 且為 $p_2$ 的倍數的正整數共有 $a\over p_2$ 個，分別為&lt;/p&gt;
+
+    &lt;p&gt;\(1p_2, 2p_2, 3p_2, \dots, {a\over p_2}p_2\)
+但因為其中有些數已經是 $p_1$ 的倍數了，所以要再扣掉在 $1, 2, 3, \dots, {a\over p_1}$ 中為 $p_2$ 的倍數，&lt;/p&gt;
+
+    &lt;p&gt;一共有&lt;/p&gt;
+
+\[{a\over p_2} - {a\over p_1} {1\over p_2} =  {a\over p_2}(1-{1\over p_1})\]
+
+    &lt;p&gt;因此不超過 $a$ 且與 $p_1, p_2$ 互質的個數就會是&lt;/p&gt;
+
+    &lt;p&gt;\(a(1-{1\over p_1}) - {a\over p_2}(1-{1\over p_1}) = a(1-{1\over p_1})(1-{1\over p_2})\)
+又因為不超過 $a$ 且為 $p_3$ 的倍數的正整數共有 $a\over p_3$ 個，分別為&lt;/p&gt;
+
+    &lt;p&gt;\(1p_3, 2p_3, 3p_3, \dots, {a\over p_3}p_3\)
+但其中有些也是 $p_2, p_3$ 的倍數，所以要去除他們&lt;/p&gt;
+
+    &lt;p&gt;在此只考慮在 $1, 2, 3, \dots, {a\over p_3}$ 中與 $p_1, p_2$ 互質的個數即可&lt;/p&gt;
+
+    &lt;p&gt;由上述計算方法可知，不超過 $a\over p_3$ 且與 $p_1, p_2$ 都互質的正整數個數為&lt;/p&gt;
+
+    &lt;p&gt;\({a\over p_3}(1-{1\over p_1})(1-{1\over p_2})\)
+於是可知，不超過 $a$ 且與 $p_1, p_2, p_3$ 互質的正整數個數為&lt;/p&gt;
+
+    &lt;p&gt;\(a(1-{1\over p_1})(1-{1\over p_2}) - {a\over p_3}(1-{1\over p_2})(1-{1\over p_2}) = a(1-{1\over p_1})(1-{1\over p_2})(1-{1\over p_3})\)
+依此類推，即可證得&lt;/p&gt;
+
+\[\varphi(a) = a(1-{1\over p_1})(1-{1\over p_2})\dots(1-{1\over p_n})\]
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;設 $a = p_1^{\alpha_1}p_2^{\alpha_2}\dots p_n^{\alpha_n}, \space b = q_1^{\beta_1}q_2^{\beta_2}\dots q_m^{\beta_m}$ 為 $a, b$ 的標準分解式，&lt;/p&gt;
+
+    &lt;p&gt;則 $p_i \neq q_j$，其中 $i = 1,2,\dots,n$ 及 $j = 1,2,\dots,m$&lt;/p&gt;
+
+    &lt;p&gt;於是&lt;/p&gt;
+
+\[\varphi(ab)\\
+= ab \prod_{k=1}^n {p_k-1\over p_k} \prod_{l=1}^m {q_l-1\over q_l}\\
+= (a\prod_{k=1}^n {p_k-1\over p_k})(b\prod_{l=1}^m {q_l-1\over q_l})\\
+= \varphi(a)\varphi(b)\]
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;eulers-theorem&quot;&gt;Euler’s Theorem&lt;/h1&gt;
+
+&lt;p&gt;歐拉定理其實是費馬小定理的推廣&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;定理&quot;&gt;定理&lt;/h2&gt;
+
+&lt;p&gt;若 $\gcd(a,m)=1$，則&lt;/p&gt;
+
+\[a^{\varphi(m)}\equiv 1 \pmod m\]
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;證明&quot;&gt;證明&lt;/h2&gt;
+
+&lt;p&gt;設 $H = \langle a \rangle$，$H$ 為 $(\mathbb{Z}/m\mathbb{Z})^{\times}$ 的一個子群&lt;/p&gt;
+
+&lt;p&gt;並且如果 $\lvert H \rvert = n$，$a^n \equiv 1 \pmod m$。&lt;/p&gt;
+
+&lt;p&gt;由 &lt;a href=&quot;https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)&quot;&gt;Lagrange’s theorem&lt;/a&gt; 可知，$ n\space \vert \space \varphi(m)$&lt;/p&gt;
+
+&lt;p&gt;令 $\varphi(m) = tn$，則&lt;/p&gt;
+
+&lt;p&gt;\(a^{\varphi(m)} \equiv (a^n)^t \equiv 1 \pmod m\)
+證畢。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;fermats-little-theorem&quot;&gt;Fermat’s Little Theorem&lt;/h2&gt;
+
+&lt;p&gt;費馬說，若 $p$ 為質數，&lt;/p&gt;
+
+\[a^{p}\equiv a \pmod p\]
+
+&lt;h6 id=&quot;這個我懶得看證明&quot;&gt;(這個我懶得看證明)&lt;/h6&gt;
+
+&lt;p&gt;若 $gcd(a,p)=1$ ，&lt;/p&gt;
+
+\[a^{p-1}\equiv 1 \pmod p\]
+
+&lt;hr /&gt;
+
+&lt;p&gt;由 &lt;a href=&quot;#euler's-theorem&quot;&gt;Euler’s Theorem&lt;/a&gt; 可推得&lt;/p&gt;
+
+&lt;p&gt;若 $p$ 為質數
+\(a^{p-1} \equiv 1 \pmod p\)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;應用&quot;&gt;應用&lt;/h1&gt;
+
+&lt;p&gt;之前在學的時候，我只有學到費馬小定理，而且沒有看證明&lt;/p&gt;
+
+&lt;p&gt;我只知道若 $p$ 為質數，&lt;/p&gt;
+
+&lt;p&gt;要算一個在模 $p$ 底下次方非常大的數時，可以將次方先$\mod p-1$&lt;/p&gt;
+
+&lt;p&gt;亦或是若 $\gcd(a,p)=1$，$a$ 的模逆元為 $a^{p-2}$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;現在把歐拉函數、定理看完後，才知道 $p$ 不一定是要質數才行&lt;/p&gt;
+
+&lt;p&gt;只要 $\gcd(a,p) = 1$ ，&lt;/p&gt;
+
+&lt;p&gt;要算一個在模 $p$ 底下次方非常大的數&lt;/p&gt;
+
+\[a^{b}\pmod p\]
+
+&lt;p&gt;根據 &lt;a href=&quot;#euler's-theorem&quot;&gt;Euler’s Theorem&lt;/a&gt; ，結果等同於&lt;/p&gt;
+
+\[a^{b\text{ mod }{\varphi(p)}} \pmod p\]
+
+&lt;hr /&gt;
+
+&lt;p&gt;若 $\gcd(a,p)=1$ ， 可以求得 $a$ 的模逆元為 $a^{\varphi(p)-1}$&lt;/p&gt;
+
+\[\because a^{\varphi(p)} \equiv 1 \pmod p\\
+\quad a\ \cdot \ a^{\varphi(p)-1} \equiv 1 \pmod p\\
+\quad a \ \cdot \ a^{-1} \equiv 1 \pmod p\\
+\therefore a^{-1} \equiv a^{\varphi(p)-1}\]
+</description>
+        <pubDate>Mon, 01 Mar 2021 03:47:00 +0000</pubDate>
+        <link>/blog/Euler/</link>
+        <guid isPermaLink="true">/blog/Euler/</guid>
+      </item>
+    
+      <item>
+        <title>美妙的0x3f3f3f3f</title>
+        <description>&lt;h1 id=&quot;美妙的-0x3f3f3f3f&quot;&gt;美妙的 0x3f3f3f3f&lt;/h1&gt;
+
+&lt;p&gt;參考資訊 : &lt;a href=&quot;https://www.itread01.com/content/1542940564.html&quot;&gt;我們為什麼會設計0x3f3f3f3f - IT閱讀 (itread01.com)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我們時常會需要將一些變數設為 INF 以便操作&lt;/p&gt;
+
+&lt;p&gt;我通常也都是根據題目將 INF 設成 1e9 + 10 之類的&lt;/p&gt;
+
+&lt;p&gt;而有些人會將 INF 設為 INT_MAX 或是 0x7fffffff，這兩個都是 32-bit 整數的最大值&lt;/p&gt;
+
+&lt;p&gt;但這樣設的最大值因為只要 +1 就會馬上溢位了，值直接變成負的，所以不是很好的選擇&lt;/p&gt;
+
+&lt;p&gt;而 0x3f3f3f3f 是一個當作 INF 最好不過的數了&lt;/p&gt;
+
+&lt;p&gt;他的十進位制是1061109567，是10^9級別的&lt;/p&gt;
+
+&lt;p&gt;而且他滿足&lt;strong&gt;無窮大加無窮大還是無窮大&lt;/strong&gt;這個條件&lt;/p&gt;
+
+&lt;p&gt;另外，0x3f3f3f3f 還有一大優勢&lt;/p&gt;
+
+&lt;p&gt;就是他可以利用 memset 將陣列初始化為最大值&lt;/p&gt;
+
+&lt;p&gt;因為 0x3f3f3f3f 每個 byte 都是 0x3f 也就是 00111111&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;memset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;另外負INF也可以喔&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;memset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x3f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;不只是 int 就連 long long 也可以這樣&lt;/p&gt;
+
+&lt;p&gt;因為 int 是 4 個 byte，有 4 個 3f&lt;/p&gt;
+
+&lt;p&gt;所以 long long 的話就是 8 個 3f&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x3f3f3f3f3f3f3f3f&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;memset 一樣是 0x3f&lt;/p&gt;
+
+&lt;p&gt;簡直就是黑科技 &amp;gt;&amp;lt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Feb 2021 14:56:00 +0000</pubDate>
+        <link>/blog/magic-of-0x3f3f3f3f/</link>
+        <guid isPermaLink="true">/blog/magic-of-0x3f3f3f3f/</guid>
+      </item>
+    
+      <item>
+        <title>利用set對區間做操作</title>
+        <description>&lt;p&gt;在 AA 競程模擬賽的其中一題&lt;/p&gt;
+
+&lt;p&gt;詳解有一個做法是利用了 set 對區間進行改值&lt;/p&gt;
+
+&lt;p&gt;查了一下相關的東西 &lt;a href=&quot;https://blog.csdn.net/u013534123/article/details/102989933&quot;&gt;Comet OJ - Contest #14（set区间操作 + 树状数组）_alpc_qleonardo-CSDN博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;待補 先睡覺zz&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Feb 2021 14:23:00 +0000</pubDate>
+        <link>/blog/set-segment/</link>
+        <guid isPermaLink="true">/blog/set-segment/</guid>
+      </item>
+    
+      <item>
+        <title>模逆元算法統整</title>
+        <description>&lt;hr /&gt;
+
+&lt;h6 id=&quot;edited--20210301&quot;&gt;Edited : 2021/03/01&lt;/h6&gt;
+
+&lt;p&gt;Added Euler’s Theorem&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;模逆元&quot;&gt;模逆元&lt;/h1&gt;
+
+\[a\cdot a^{-1} \equiv 1 \pmod n\]
+
+&lt;p&gt;下面是幾種計算模逆元的方法&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;費馬小定理&quot;&gt;費馬小定理&lt;/h2&gt;
+
+&lt;p&gt;詳細 : &lt;a href=&quot;https://jorrhukmb.github.io/blog/AA-notes-math/&quot;&gt;AA競程同好會-數論&lt;/a&gt;&lt;/p&gt;
+
+\[a^{-1} = a^{n-2}\]
+
+&lt;p&gt;&lt;strong&gt;若且唯若&lt;/strong&gt; $n$ &lt;strong&gt;為質數&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;否則請用下面的歐拉定理&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;歐拉定理&quot;&gt;歐拉定理&lt;/h2&gt;
+
+&lt;p&gt;詳細 : &lt;a href=&quot;/blog/Euler&quot;&gt;Euler’s Totient Function/Theorem&lt;/a&gt;&lt;/p&gt;
+
+\[a^{-1} = a^{\varphi(n)-1}\]
+
+&lt;p&gt;&lt;strong&gt;若且唯若&lt;/strong&gt; $\gcd(a,n)=1$&lt;/p&gt;
+
+&lt;p&gt;否則 $a^{-1}$ 不存在&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;擴展歐幾里得&quot;&gt;擴展歐幾里得&lt;/h2&gt;
+
+&lt;p&gt;詳細 : &lt;a href=&quot;https://jorrhukmb.github.io/blog/euclidean/&quot;&gt;擴展歐幾里得算法&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;利用擴展歐幾里得算法求出一組不定方程解&lt;/p&gt;
+
+\[ax + ny = g\]
+
+&lt;p&gt;$g = \gcd(a,n)$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$a^{-1} = x$ 若且唯若 $g = 1$&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;否則 $a^{-1}$ 不存在&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Sun, 21 Feb 2021 07:08:00 +0000</pubDate>
+        <link>/blog/inverse-modulo/</link>
+        <guid isPermaLink="true">/blog/inverse-modulo/</guid>
+      </item>
+    
+      <item>
+        <title>擴展歐幾里得算法</title>
+        <description>&lt;h1 id=&quot;歐幾里得算法&quot;&gt;歐幾里得算法&lt;/h1&gt;
+
+&lt;p&gt;俗稱輾轉相除法&lt;/p&gt;
+
+&lt;p&gt;用來求兩數的最大公因數&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;算法&quot;&gt;算法&lt;/h2&gt;
+
+\[\gcd(a,b)=\gcd(a-b, b),\quad a&amp;gt;b\\
+\rightarrow\gcd(a,b)=gcd(a\space mod\space b, b), \quad a&amp;gt;b\]
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;原理&quot;&gt;原理&lt;/h2&gt;
+
+&lt;p&gt;設
+\(a = 252, b = 105\\
+\gcd(a,b)=21\\
+252 = 21\cdot12\\
+105 = 21\cdot5\\
+\because 252-105=21\cdot(12-5)=147\\
+\therefore \gcd(105,147) = 21\)&lt;/p&gt;
+
+&lt;p&gt;圖解&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;圖 待補&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;擴展歐幾里得算法&quot;&gt;擴展歐幾里得算法&lt;/h1&gt;
+
+&lt;p&gt;為歐幾里得算法的擴展 (廢話)&lt;/p&gt;
+
+&lt;p&gt;可在利用歐幾里得算法求 $\gcd(a,b)$ 時同時算出一組 $x,y$，使得&lt;/p&gt;
+
+\[ax+by=\gcd(a,b)\]
+
+&lt;p&gt;也就是滿足&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%B2%9D%E7%A5%96%E7%AD%89%E5%BC%8F&quot;&gt;&lt;em&gt;貝祖等式&lt;/em&gt; &lt;/a&gt;(我沒詳細去看是啥)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;根據歐幾里得算法&lt;/p&gt;
+
+\[\gcd(a,b)=\gcd(a\space mod \space b, b),\quad a&amp;gt;b\]
+
+&lt;h6 id=&quot;下面有一部分是抄-wiki-的因為我不知道要怎麼講得更淺顯易懂&quot;&gt;(下面有一部分是抄 wiki 的，因為我不知道要怎麼講得更淺顯易懂)&lt;/h6&gt;
+
+&lt;p&gt;第 $i$ 步帶餘除法得到的商為 $q_i$，餘數為 $r_{i+1}$，我們可以寫成下面的形式&lt;/p&gt;
+
+\[r_0=a\\
+r_1=b\\
+\vdots\\
+r_{i+1} = r_{i-1} - q_i r_i\quad \text{and}\quad 0\leq r_{i+1} &amp;lt; \lvert r_i \rvert\\
+\vdots\]
+
+&lt;p&gt;當某步得到的 $r_{i+1} = 0$ 時，計算結束，上一步得到的 $r_i$ 即為 $a,b$ 的 $\gcd$&lt;/p&gt;
+
+&lt;p&gt;擴展歐幾里得除了 $q_i,r_i$ 外還多紀錄了兩組序列，記作 $s_i, t_i$，使得&lt;/p&gt;
+
+\[a s_i+bt_i=r_i\]
+
+&lt;p&gt;而透過觀察可發現&lt;/p&gt;
+
+\[a\cdot1+b\cdot0=a\\
+a\cdot0+b\cdot1=b\]
+
+&lt;p&gt;因此&lt;/p&gt;
+
+\[s_0 = 1,\space t_0 = 0\\
+s_1 = 0,\space t_1 = 1\]
+
+&lt;p&gt;而根據 $r_i$ 的遞推式可推得&lt;/p&gt;
+
+\[r_{i+1}\\
+= r_{i-1}-q_i r_i\\
+= (a s_{i-1}+b t_{i-1}) - q_i(a s_i+b t_i)\\
+= (a s_{i-1}-a s_i q_i)+(b t_{i-1}-b t_i q_i)\\
+= a(s_{i-1}-s_i q_i)+b(t_{i-1}-t_i q_i)\\
+= a s_{i+1} + b t_{i+1}\]
+
+&lt;p&gt;因此&lt;/p&gt;
+
+\[s_{i+1} = s_{i-1}-s_i q_i\\
+t_{i+1} = t_{i-1}-t_i q_i\]
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;應用&quot;&gt;應用&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;模逆元&quot;&gt;模逆元&lt;/h3&gt;
+
+&lt;p&gt;假設要求 $a$ 在$ \mod n$ 下的模逆元 $a^{-1}$&lt;/p&gt;
+
+&lt;p&gt;利用擴展歐幾里得算法&lt;/p&gt;
+
+\[a x + n y = g\]
+
+&lt;p&gt;$g$ 為 $\gcd(a,n)$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;若 $g = 1$ ， $a^{-1}$ 存在&lt;/strong&gt;&lt;/p&gt;
+
+\[a x + n y = 1\\
+\rightarrow a x \equiv 1 \pmod n\]
+
+&lt;p&gt;即得 $a^{-1} = x$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;若 $g \neq 1$ ，$a^{-1}$ 不存在&lt;/strong&gt;&lt;/p&gt;
+
+\[\because a x + n y \neq 1\\
+\therefore ax \neq 1 \pmod n\]
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Sun, 21 Feb 2021 06:17:00 +0000</pubDate>
+        <link>/blog/euclidean/</link>
+        <guid isPermaLink="true">/blog/euclidean/</guid>
+      </item>
+    
+      <item>
+        <title>CF #703 Div.2 賽後檢討</title>
+        <description>&lt;p&gt;Solved : 3/7  Rank : 2596&lt;/p&gt;
+
+&lt;p&gt;Rating : &lt;span style=&quot;color:#03A89E&quot;&gt;1476&lt;/span&gt; -&amp;gt; &lt;span style=&quot;color:#03A89E&quot;&gt;1542&lt;/span&gt; (+66)&lt;/p&gt;
+
+&lt;p&gt;這場狀況感覺不是很好，比賽前5分鐘才剛洗好澡&lt;/p&gt;
+
+&lt;p&gt;沒有稍微小睡一下&lt;/p&gt;
+
+&lt;p&gt;策略的部分本來想說這次加快一點，結果 pA 就漏看東西，pC 在想的時候也漏掉一些細節&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pa&quot;&gt;pA&lt;/h1&gt;
+
+&lt;p&gt;看完題目就想說直接算總共加起來是不是 ${n(n-1)}\over2$ 就好了&lt;/p&gt;
+
+&lt;p&gt;WA 後重看題目才注意到操作只能往右移動&lt;/p&gt;
+
+&lt;p&gt;所以就整個重打，改成模擬&lt;/p&gt;
+
+&lt;p&gt;浪費了一點時間&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pb&quot;&gt;pB&lt;/h1&gt;
+
+&lt;p&gt;我好爛喔&lt;/p&gt;
+
+&lt;p&gt;上課教過的東西我竟然不會QQ&lt;/p&gt;
+
+&lt;p&gt;懶得說 看詳解&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pc&quot;&gt;pC&lt;/h1&gt;
+
+&lt;p&gt;搞了我一個多小時&lt;/p&gt;
+
+&lt;p&gt;我也忘記我當時是在哪裡卡很久了&lt;/p&gt;
+
+&lt;p&gt;反正就是各種鬼打牆，很多地方沒想清楚…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd-pe-pf&quot;&gt;pD pE pF&lt;/h1&gt;
+
+&lt;p&gt;待補&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Feb 2021 06:37:00 +0000</pubDate>
+        <link>/blog/codeforces-703-div2-after-contest/</link>
+        <guid isPermaLink="true">/blog/codeforces-703-div2-after-contest/</guid>
+      </item>
+    
+      <item>
+        <title>CF #702 Div.3 賽後檢討</title>
+        <description>&lt;p&gt;Solved : 6/7  Rank : 789&lt;/p&gt;
+
+&lt;p&gt;Rating : &lt;span style=&quot;color:#008000&quot;&gt;1324&lt;/span&gt; -&amp;gt; &lt;span style=&quot;color:#03A89E&quot;&gt;1476&lt;/span&gt; (+152)&lt;/p&gt;
+
+&lt;p&gt;好像沒什麼好寫的 所以就跳過w&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Feb 2021 08:03:00 +0000</pubDate>
+        <link>/blog/codeforces-702-div3-after-contest/</link>
+        <guid isPermaLink="true">/blog/codeforces-702-div3-after-contest/</guid>
+      </item>
+    
+      <item>
+        <title>CF Edu #104 賽後檢討</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1487&quot;&gt;Educational Codeforces Round 104&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Solved : 4/7  Rank : 1705;&lt;/p&gt;
+
+&lt;p&gt;Rating : &lt;span style=&quot;color:#808080&quot;&gt;1094&lt;/span&gt; -&amp;gt; &lt;span style=&quot;color:#008000&quot;&gt;1324&lt;/span&gt; (+230)&lt;/p&gt;
+
+&lt;p&gt;策略一樣採用謹慎，但這次有稍微試著加快一下&lt;/p&gt;
+
+&lt;p&gt;然後我寫完 pB 後不小心先跳過了 pC 先看 pD&lt;/p&gt;
+
+&lt;p&gt;然後我又喜歡照順序解 因為我怕我解不出來後面的&lt;/p&gt;
+
+&lt;p&gt;所以我pD想到一半就回去看pC了&lt;/p&gt;
+
+&lt;p&gt;可能這樣導致我 penalty 比較高 ?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pa&quot;&gt;pA&lt;/h1&gt;
+
+&lt;p&gt;水&lt;/p&gt;
+
+&lt;p&gt;直接排序然後 upper_bound 找出陣列中有幾個是最小的值&lt;/p&gt;
+
+&lt;p&gt;然後用 $n$ 去扣就是答案&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pb&quot;&gt;pB&lt;/h1&gt;
+
+&lt;p&gt;因為在 $k=1$ 時位置在 $1$，且他是1-based index 的，所以實際要移動的次數是 $k-1$ 次，最後位置再 +1&lt;/p&gt;
+
+&lt;p&gt;我的作法是&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;若 $n$ 為偶數，必定不會出現搶位子的情況，所以輸出 $(k-1)\%n+1$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;若 $n$ 為奇數，會發現它移動的方式會是移動 ${n\over 2}-1$ 次 $1$ 格後再移動 $1$ 次 $2$ 格&lt;/p&gt;
+
+    &lt;p&gt;所以我就算出他總共移動了幾格，之後輸出 $steps\%n+1$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pc&quot;&gt;pC&lt;/h1&gt;
+
+&lt;p&gt;構造題&lt;/p&gt;
+
+&lt;p&gt;因為每隊分數要一樣，所以每隊輸贏的次數要一樣&lt;/p&gt;
+
+&lt;p&gt;我原本以為 $n$ 為偶數時要全部平手&lt;/p&gt;
+
+&lt;p&gt;WA一次後再驗證一下才發現是每隊僅有一次平手&lt;/p&gt;
+
+&lt;p&gt;因為我想不出漂亮又簡單的解法&lt;/p&gt;
+
+&lt;p&gt;所以我是開了三個陣列分別記錄每隊 win, lose, tie 的次數&lt;/p&gt;
+
+&lt;p&gt;賽後看到 dreamoon大大 的code非常乾淨，所以就問了一下他的做法&lt;/p&gt;
+
+&lt;p&gt;他的構造方式是把所有人按照編號圍成一圈，然後每個人都贏他順時針方向的前 floor((n-1)/2) 個人&lt;/p&gt;
+
+&lt;p&gt;太乾淨了 orz&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd&quot;&gt;pD&lt;/h1&gt;
+
+&lt;p&gt;數學題&lt;/p&gt;
+
+&lt;p&gt;其實沒有說很難，只是我推的速度太慢了&lt;/p&gt;
+
+&lt;p&gt;\(\begin{cases}
+{a^2+b^2=c^2}\\ {c=a^2-b}
+\end{cases}\)
+$\rightarrow c^2-c=b^2-b$&lt;/p&gt;
+
+&lt;p&gt;$\rightarrow c(c-1)=b(b+1)$&lt;/p&gt;
+
+&lt;p&gt;之後想了一段時間才發現 $c = b+1$&lt;/p&gt;
+
+&lt;p&gt;那麼 $a$ 要有正整數解代表 $\sqrt{c^2-b^2}$ 為正整數&lt;/p&gt;
+
+&lt;p&gt;把所有正整數平方後得到&lt;/p&gt;
+
+&lt;p&gt;$1,4,9,16,25,36,49,64,…$&lt;/p&gt;
+
+&lt;p&gt;兩兩相減後會成等差數列&lt;/p&gt;
+
+&lt;p&gt;$3,5,7,9,11,13,15,…$&lt;/p&gt;
+
+&lt;p&gt;所以只要預處理枚舉 $a^2$， 透過等差數列的公式算出 $a$ 對應到的解的 $c$ ，塞進vector&lt;/p&gt;
+
+&lt;p&gt;之後對輸入的數 $n$ upper_bound 一下就是答案了&lt;/p&gt;
+
+&lt;h6 id=&quot;new-skill--知道連續正整數平方相差會成等差數列xd&quot;&gt;New Skill : 知道連續正整數平方相差會成等差數列XD&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pe-pf-pg&quot;&gt;pE pF pG&lt;/h1&gt;
+
+&lt;p&gt;待補&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Feb 2021 10:12:00 +0000</pubDate>
+        <link>/blog/codeforces-edu-104-after-contest/</link>
+        <guid isPermaLink="true">/blog/codeforces-edu-104-after-contest/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/02/15</title>
+        <description>&lt;p&gt;今天有新成員 yjojdkgk5bp 跟他弟&lt;/p&gt;
+
+&lt;p&gt;今天 vir 了 &lt;a href=&quot;https://codeforces.com/contest/612&quot;&gt;Educational Codeforces Round 4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;前三題都算簡單&lt;/p&gt;
+
+&lt;p&gt;第四題搞了我 1 個多小時最後還沒 AC，&lt;/p&gt;
+
+&lt;p&gt;第一次submit 沒注意到 $l,r$ 可能一樣 所以 WA&lt;/p&gt;
+
+&lt;p&gt;改了之後再 submit 一次，還是WA&lt;/p&gt;
+
+&lt;p&gt;然後我就開始被自己搞混，想說數字有連續的要合併成一個區間&lt;/p&gt;
+
+&lt;p&gt;就這樣搞了 1 次 當然還是 WA&lt;/p&gt;
+
+&lt;p&gt;之後我就想通不用合併，整個砍掉回到第一個submit的code&lt;/p&gt;
+
+&lt;p&gt;最後我想到可以弄成左閉右開會比較好處理&lt;/p&gt;
+
+&lt;p&gt;至於右區間跟左區間同時出現會被抵銷的問題我就是先把右區間扣掉判斷一次，再加左區間判斷一次&lt;/p&gt;
+
+&lt;p&gt;但我還是WA&lt;/p&gt;
+
+&lt;p&gt;賽後才發現是我初始化的值會被用到，所以炸了&lt;/p&gt;
+
+&lt;p&gt;真的是有夠氣 = =&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Feb 2021 03:49:00 +0000</pubDate>
+        <link>/blog/diary-2/</link>
+        <guid isPermaLink="true">/blog/diary-2/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/02/14</title>
+        <description>&lt;p&gt;今天補了前天 &lt;a href=&quot;https://codeforces.com/contest/609&quot;&gt;Educational Codeforces Round 3&lt;/a&gt; 的 pD, pF&lt;/p&gt;
+
+&lt;p&gt;還有稍微仔細看了一下 LCA&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pf&quot;&gt;pF&lt;/h1&gt;
+
+&lt;p&gt;因為我線段樹的題練超少，所以我決定先補一下 pF&lt;/p&gt;
+
+&lt;p&gt;寫這題的時候我也更熟悉了 STL&lt;/p&gt;
+
+&lt;p&gt;因為這題會用到 set 存還沒被吃掉的蚊子&lt;/p&gt;
+
+&lt;p&gt;之後有青蛙吃掉蚊子後，就會一直在set中繼續找可以吃的並刪除&lt;/p&gt;
+
+&lt;p&gt;我當時對 set 的運算有很多還不了解的地方&lt;/p&gt;
+
+&lt;p&gt;總之我釐清了以下幾點 :&lt;/p&gt;
+
+&lt;p&gt;假設 set = {1,2,3}, it = set.begin()&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;*next(it) 會是 2&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iterator type 為 bidirectional 的 container (list, set, map)&lt;/p&gt;
+
+    &lt;p&gt;next(), prev() 時間複雜度是 $O(log_2{n})$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;對 set 進行 lower_bound, upper_bound 的時候&lt;/p&gt;
+
+    &lt;p&gt;查詢的值必須是相同型態，舉例 :&lt;/p&gt;
+
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyStruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;MyStruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyStruct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyStruct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower_bound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyStruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 若只想二分搜 a 的值，須轉型態&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;不能透過重載運算子&lt;/p&gt;
+
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opeartor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rhs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;new-skill--更加熟悉-stl線段樹exp&quot;&gt;New Skill : 更加熟悉 STL、線段樹exp++&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd&quot;&gt;pD&lt;/h1&gt;
+
+&lt;h6 id=&quot;new-skill--這種類型的題因為第-x-天只有-true-或-false且只要有一個為true後面也都會是true所以可以直接砸二分搜&quot;&gt;New Skill : 這種類型的題因為第 $x$ 天只有 true 或 false，且只要有一個為true，後面也都會是true，所以可以直接砸二分搜&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;lca&quot;&gt;LCA&lt;/h1&gt;
+
+&lt;p&gt;之前完全沒有刻過 LCA，只有大概知道倍增法，所以想說研究一下實作&lt;/p&gt;
+
+&lt;p&gt;倍增法的算法是 $parent[node][i] = parent[parent[node][i-1]][i-1]$&lt;/p&gt;
+
+&lt;p&gt;也就是目前&lt;strong&gt;這個節點的上 $2^i$個祖先&lt;/strong&gt;是&lt;strong&gt;這個節點上$2^{i-1}$個祖先的上$2^{i-1}$個祖先&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;看到別人的實作還有一個版本是紀錄 dfs 時這個節點進來及出去的時間&lt;/p&gt;
+
+&lt;p&gt;之後就可以 $O(1)$ 知道節點 $u$ 是否為節點 $v$ 的祖先&lt;/p&gt;
+
+&lt;p&gt;還沒看完，待補&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Feb 2021 03:24:00 +0000</pubDate>
+        <link>/blog/diary-1/</link>
+        <guid isPermaLink="true">/blog/diary-1/</guid>
+      </item>
+    
+      <item>
+        <title>學習筆記-2021/02/12</title>
+        <description>&lt;p&gt;這陣子每天都和 jeffreylin0909 去他家自習室練題目&lt;/p&gt;
+
+&lt;p&gt;blog 的東西好久沒碰 @@&lt;/p&gt;
+
+&lt;p&gt;慢慢來補一下&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;今天 (前幾天)和 jeffreylin0909 跟 Arena_Closer 約好一起去 jeffreylin0909 新家的自習室一起練&lt;/p&gt;
+
+&lt;p&gt;我們早上一起 vir 了 &lt;a href=&quot;https://codeforces.com/contest/609&quot;&gt;Educational Codeforces Round 3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下面記錄一些我學到的東西&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/609/problem/E&quot;&gt;pE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;原本腦袋被撞到&lt;/p&gt;
+
+&lt;p&gt;樹的定義不知道怎麼想成二元樹的&lt;/p&gt;
+
+&lt;p&gt;本來想說用dfs找環，然後再找邊扣&lt;/p&gt;
+
+&lt;p&gt;後來聽 jeffreylin0909 說是LCA 我才頓時想通&lt;/p&gt;
+
+&lt;p&gt;我雖然知道LCA 怎麼做，但是完全沒有實際刻過&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/609/problem/F&quot;&gt;pF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一開始題目一直想成是二維的= =&lt;/p&gt;
+
+&lt;p&gt;然後沒注意到沒被吃的蚊子不會飛走&lt;/p&gt;
+
+&lt;p&gt;所以我一開始的想法是每隻蚊子的 $x$ 座標對青蛙可吃到的最遠座標去二分搜&lt;/p&gt;
+
+&lt;p&gt;可是因為青蛙的舌頭長會增加，所以這個做法不可行&lt;/p&gt;
+
+&lt;p&gt;模擬賽後我們去吃午餐，我把題敘講給還沒看題目的 Arena_Closer&lt;/p&gt;
+
+&lt;p&gt;他大概只花了 3 分鐘就講出了正解 Orz&lt;/p&gt;
+
+&lt;p&gt;就是先將青蛙按座標排序，然後對青蛙開線段樹&lt;/p&gt;
+
+&lt;p&gt;每次查詢就先看左邊可不可以，不行再看右邊&lt;/p&gt;
+
+&lt;h6 id=&quot;new-skill--不是只有座標可以開線段樹&quot;&gt;New Skill : 不是只有座標可以開線段樹&lt;/h6&gt;
+</description>
+        <pubDate>Tue, 16 Feb 2021 02:36:00 +0000</pubDate>
+        <link>/blog/diary-0/</link>
+        <guid isPermaLink="true">/blog/diary-0/</guid>
+      </item>
+    
+      <item>
+        <title>CF #701 Div.2 賽後檢討</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1485&quot;&gt;Codeforces Round #701 (Div. 2)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Solved : 1/6  Rank : 5137;&lt;/p&gt;
+
+&lt;p&gt;Rating :  &lt;span style=&quot;color:#808080&quot;&gt;898&lt;/span&gt; -&amp;gt;  &lt;span style=&quot;color:#808080&quot;&gt;1094&lt;/span&gt; (+196)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;燒雞場&lt;/p&gt;
+
+&lt;p&gt;這場比賽前沒有先小睡一下，賽中腦袋一直頓住&lt;/p&gt;
+
+&lt;p&gt;以後賽前一定要先好好休息一下&lt;/p&gt;
+
+&lt;p&gt;策略方面我一樣是照著上次那樣&lt;/p&gt;
+
+&lt;p&gt;慢慢看題、解題，不要太趕&lt;/p&gt;
+
+&lt;p&gt;題目ㄉ部分&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pa&quot;&gt;pA&lt;/h1&gt;
+
+&lt;p&gt;梗題，但因為根據以往寫 div.2 pA 的經驗來看&lt;/p&gt;
+
+&lt;p&gt;我以為都是要 $O(1)$ 解&lt;/p&gt;
+
+&lt;p&gt;但因為我推不出什麼東西，所以開始想是不是暴搜&lt;/p&gt;
+
+&lt;p&gt;$1\leq a,b \leq 10^9$&lt;/p&gt;
+
+&lt;p&gt;因為不知道怎麼證明上界&lt;/p&gt;
+
+&lt;p&gt;所以就抱著猜測的心情上傳，然後就 &lt;strong&gt;&lt;span style=&quot;color:lightgreen&quot;&gt;AC&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pb&quot;&gt;pB&lt;/h1&gt;
+
+&lt;p&gt;算是簡單題&lt;/p&gt;
+
+&lt;p&gt;因為每次只會變 $1$ 個數字，所以每個數字只能介於$(a_{i-1}, a_{i+1})$之間 $(a_0=0, a_{n+1}=k+1)$&lt;/p&gt;
+
+&lt;p&gt;之後再前綴和一下&lt;/p&gt;
+
+&lt;p&gt;求區間 $[l,r]$ 的答案時，只要求 $[l+1,r-1]$ 的數量加上 $(k-a_{r-2}-1) + (a_{l+1}-2)$&lt;/p&gt;
+
+&lt;h4 id=&quot;檢討&quot;&gt;檢討&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;我有個壞習慣，就是範測錯的時後不會重新 re 一下 code&lt;/p&gt;
+
+    &lt;p&gt;通常都是改一些小地方，然後範測過了就上傳，不會多檢查一下&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我一開始輸入的時候陣列的 index 是 0-based 的&lt;/p&gt;
+
+    &lt;p&gt;後來在處理前綴和的時候因為有個初始值比較好處理&lt;/p&gt;
+
+    &lt;p&gt;但因為我懶得改前面陣列的 index 所以我兩個陣列的 index 沒有同步&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;因為上面那兩點，我的 pretest 是有過的，但最後在 main test 的時候就 WA 了&lt;/p&gt;
+
+&lt;h1 id=&quot;pc&quot;&gt;pC&lt;/h1&gt;
+
+&lt;p&gt;因為賽前沒睡一下，所以寫到 pC 的時候已經有點無法動腦了&lt;/p&gt;
+
+&lt;p&gt;總之我就是打表觀察，觀察到以下幾點&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;$a\leq 2$ 答案為 $0$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$b\geq a$ 不會有解&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;若枚舉 $b$，所有實數跟 $b$ 僅會有 $b-1$ 個 speacial pair&lt;/p&gt;
+
+    &lt;p&gt;而 special pair 的情況發生在
+\((b+1,b), (2(b+1), b),...,((b-1)(b+1), b)\)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以答案就是
+\(\sum_{b=2}^{y}\min(b-1,{x\over(b+1)})\)
+但這樣是 $O(n)$，所以我吃了大大的 TLE，但我覺得應該有哪裡可以優化www&lt;/p&gt;
+
+&lt;p&gt;雖然這完全是假解，詳解好像完全不是這樣的XD&lt;/p&gt;
+
+&lt;p&gt;我真是個性質亂觀察大師&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd-pe-pf&quot;&gt;pD pE pF&lt;/h1&gt;
+
+&lt;p&gt;待補&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Feb 2021 10:12:00 +0000</pubDate>
+        <link>/blog/codeforces-701-div2-after-contest/</link>
+        <guid isPermaLink="true">/blog/codeforces-701-div2-after-contest/</guid>
+      </item>
+    
+      <item>
+        <title>AA競程同好會-數論</title>
+        <description>&lt;hr /&gt;
+
+&lt;h6 id=&quot;edited--20210301&quot;&gt;Edited : 2021/03/01&lt;/h6&gt;
+
+&lt;p&gt;關於費馬小定理推廣及證明，請見 &lt;a href=&quot;/blog/Euler&quot;&gt;Euler’s Totient Function/Theorem&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;前幾天在忙寒訓，然後昨天耍廢了一天qq&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;數論&quot;&gt;數論&lt;/h1&gt;
+
+&lt;p&gt;大致上就是跟模運算有關&lt;/p&gt;
+
+&lt;p&gt;然後數學國手 Arena_Closer 有稍微寫了一些定理的證明 &lt;a href=&quot;https://hackmd.io/@701-Coder/N_theorems?fbclid=IwAR11H_XicaXzU4l7yBTL7jAk-O3R9599EccwWgMLKYzjVCQ7mzx1c3XGrc4&quot;&gt;Several Theorems in Number Theory - HackMD&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;但我看不懂…對&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;費馬小定理-fermats-theorem&quot;&gt;費馬小定理 Fermat’s Theorem&lt;/h2&gt;
+
+\[a^{p}\equiv a\pmod p\]
+
+&lt;p&gt;若 $a,p$ 互質，
+\(a^{p-1}\equiv 1 \pmod p\)&lt;/p&gt;
+
+&lt;h3 id=&quot;應用&quot;&gt;應用&lt;/h3&gt;
+
+&lt;p&gt;若要計算一個在模運算底下冪次很大的數
+\(a^b \mod p\)
+若 $a,p$ 互質，則相當於
+\(a^{(b\mod (p-1))} \mod p\)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;模逆元&quot;&gt;模逆元&lt;/h2&gt;
+
+&lt;p&gt;原理跟證明其實我沒有很清楚，所以下面可能寫得有點隨便&lt;/p&gt;
+
+&lt;p&gt;因為除法在取模的時候不能像其他運算一樣簡單&lt;/p&gt;
+
+&lt;p&gt;所以就需要模逆元的幫助&lt;/p&gt;
+
+&lt;p&gt;假設我們要計算 在$\mod p$ 底下 $x/y$ 的值
+\({x\over y}\mod p\)
+相當於 $x$ 乘上 $y$ 的反元素(模逆元)
+\(x\cdot y^{-1} \mod p\)
+因此我們需要算出 $y$ 的模逆元&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;模逆元定義如下
+\(a\cdot a^{-1}\equiv1\pmod p\)
+$a^{-1}$ 為 $a$ 的 模逆元&lt;/p&gt;
+
+&lt;p&gt;根據 &lt;strong&gt;費馬小定理&lt;/strong&gt;，當 $a$、$p$ &lt;strong&gt;互質&lt;/strong&gt;時可得
+\(a^{p-1} \equiv 1 \pmod p\)
+結合上面的式子
+\(a\cdot a^{p-2}\equiv1\pmod p\)
+因此模逆元 $a^{-1} \equiv a^{p-2} \pmod p$&lt;/p&gt;
+
+&lt;p&gt;再套回第一個式子，
+\({x\over y}\mod p
+=
+x\cdot y^{p-2}\mod p\)
+&lt;strong&gt;注意!!&lt;/strong&gt;  $a$ 的模逆元存在 若且唯若 $a,p$ 互質&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 11 Feb 2021 06:24:00 +0000</pubDate>
+        <link>/blog/AA-notes-math/</link>
+        <guid isPermaLink="true">/blog/AA-notes-math/</guid>
+      </item>
+    
+      <item>
+        <title>CF #700 Div.2 賽後檢討</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1480&quot;&gt;Codeforces Round #700 (Div. 2)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Solved : 3/6  Rank : 1212;&lt;/p&gt;
+
+&lt;p&gt;Rating :  &lt;span style=&quot;color:#808080&quot;&gt;422&lt;/span&gt; -&amp;gt;  &lt;span style=&quot;color:#808080&quot;&gt;898&lt;/span&gt; (+476)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;辦新帳號的第二場比賽 ((上一場被電爛有點不爽 又是灰階開始= =&lt;/p&gt;
+
+&lt;p&gt;我這整場的策略跟之前的都不一樣&lt;/p&gt;
+
+&lt;p&gt;之前都是會為了搶快，題目都看得超快，而且會有點過度緊張，都無法冷靜的思考&lt;/p&gt;
+
+&lt;p&gt;然後常常到後半場就完全沒幹勁&lt;/p&gt;
+
+&lt;p&gt;這次我就試著以非常輕鬆的態度去比&lt;/p&gt;
+
+&lt;p&gt;就是慢慢來，發現思考有比較順利，然後有好好撐完整場&lt;/p&gt;
+
+&lt;p&gt;以下是關於題目的部分&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pa&quot;&gt;pA&lt;/h1&gt;
+
+&lt;p&gt;就是水題，應該花不到幾分鐘就 AC 了，不贅述&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pb&quot;&gt;pB&lt;/h1&gt;
+
+&lt;p&gt;題目的 input 一開始沒看仔細，花了一點時間 debug 後 submitt -&amp;gt; WA&lt;/p&gt;
+
+&lt;p&gt;把 float 改成 double, int 改成 long long 就 AC 了，雖然我還不知道為啥，範圍應該沒超過才對&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pc&quot;&gt;pC&lt;/h1&gt;
+
+&lt;p&gt;系統 pretest 太弱 @@&lt;/p&gt;
+
+&lt;p&gt;我二分搜的右界忘了+1，main test 炸&lt;/p&gt;
+
+&lt;p&gt;$n=2$ 的情況輸出格式不正確，main test 炸&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd1&quot;&gt;pD1&lt;/h1&gt;
+
+&lt;p&gt;我思考常常都會一下子滯空，所以這題嚴格來說不算是有解出來&lt;/p&gt;
+
+&lt;p&gt;我是random生出測資看出bug的&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;pd2pe&quot;&gt;pD2、pE&lt;/h1&gt;
+
+&lt;p&gt;待補&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 08 Feb 2021 15:10:00 +0000</pubDate>
+        <link>/blog/codeforces-700-div2-after-contest/</link>
+        <guid isPermaLink="true">/blog/codeforces-700-div2-after-contest/</guid>
+      </item>
+    
+      <item>
+        <title>AA競程同好會-計算幾何</title>
+        <description>&lt;h1 id=&quot;計算幾何&quot;&gt;計算幾何&lt;/h1&gt;
+
+&lt;p&gt;第一次接觸的東西，覺得還蠻有趣的，第一次把高中數學應用在資訊這邊 (排列組合除外。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;向量&quot;&gt;向量&lt;/h2&gt;
+
+&lt;p&gt;基本上就是一堆向量的判斷之類的，先講一下向量的一些基本運算及性質&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;向量運算&quot;&gt;向量運算&lt;/h3&gt;
+
+&lt;p&gt;向量運算有 &lt;strong&gt;向量加減&lt;/strong&gt;、&lt;strong&gt;向量乘純量&lt;/strong&gt;、&lt;strong&gt;內積&lt;/strong&gt;、&lt;strong&gt;外積&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;$\vec{a}=(x_1,y_1),\vec{b}=(x_2,y_2)$&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;向量加減 :&lt;/p&gt;
+
+    &lt;p&gt;$\vec{a}+\vec{b}=(x_1+x_2,y_1+y_2)$&lt;/p&gt;
+
+    &lt;p&gt;$\vec{a}-\vec{b}=\vec{a}+(-\vec{b})=(x_1-x_2,y_1-y_2)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;向量乘純量 :&lt;/p&gt;
+
+    &lt;p&gt;$t\cdot\vec{a}=(t\cdot x_1,t\cdot y_1)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;向量內積 (Dot product):&lt;/p&gt;
+
+    &lt;p&gt;設 $\theta$ 為 $\vec{a},\vec{b}$ 夾角&lt;/p&gt;
+
+    &lt;p&gt;$\vec{a}\cdot\vec{b}=\lvert\vec{a}\rvert\lvert\vec{b}\rvert\cdot \cos(\theta)=x_1x_2+y_1y_2$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;向量外積 (Cross product) :&lt;/p&gt;
+
+    &lt;p&gt;這個108課綱沒教到，所以我沒有到很清楚，以下可能會講錯&lt;/p&gt;
+
+    &lt;p&gt;$\vec{a}\times\vec{b}=\lvert\vec{a}\rvert\lvert\vec{b}\rvert\cdot\sin(\theta)=x_1y_2-x_2y_1$&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;幾何意義&lt;/em&gt; : 跟行列式一樣 (還是他們其實是同個東西..?) 可以算出&lt;strong&gt;凸多邊形的面積&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;若 $\vec{a}\times\vec{b}&amp;lt;0$ 則 $\vec{b}$ 在 $\vec{a}$ 的&lt;strong&gt;順&lt;/strong&gt;時鐘方向&lt;/p&gt;
+
+    &lt;p&gt;若 $\vec{a}\times\vec{b}&amp;gt;0$ 則 $\vec{b}$ 在 $\vec{a}$ 的&lt;strong&gt;逆&lt;/strong&gt;時鐘方向&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;模板&quot;&gt;模板&lt;/h3&gt;
+
+&lt;p&gt;整數 :&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Dot Product&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Cross Porduct&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                                                                                                         
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// vector magnitude&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;angle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;atan2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// direction angle&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;friend&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ostream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ostream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;friend&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;istream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;istream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;浮點數 :&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EPS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;acos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EPS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fabs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EPS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;angle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;atan2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;friend&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ostream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ostream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;friend&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;istream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;istream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;一些我會的計算幾何演算法&quot;&gt;一些我會的計算幾何演算法&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;判斷線段是否相交&quot;&gt;判斷線段是否相交&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cses.fi/problemset/task/2190&quot;&gt;CSES - Line Segment Intersection&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;問 $\overline{AB}$ 是否與 $\overline{CD}$ 相交&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;inter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;因為可能會爆 long long ，所以加了 ng$()$ 去處理&lt;/p&gt;
+
+&lt;p&gt;前面 4 個是先把 $\overline{AB}$ 跟 $\overline{CD}$ 的 $x$ 軸、 $y$ 軸完全相離的情況先特判掉&lt;/p&gt;
+
+&lt;p&gt;之後就是用外積的方式判斷 $\vec{AB}$ 與 $C、D$ 以及 $\vec{CD}$ 與 $A、B$ 的外積是否為負，也就是分別在線段的兩邊&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;判斷一點是否在線段上&quot;&gt;判斷一點是否在線段上&lt;/h4&gt;
+
+&lt;p&gt;問 $C$ 是否在 $\overline{AB}$ 上&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_side&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;先內積判斷 $\overline{CA}、\overline{CB}$ 夾角 $&amp;gt;90^{\circ}$，之後再外積判斷 $\overline{CA}、\overline{CB}$ 平行。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;點與凸多邊形關係&quot;&gt;點與凸多邊形關係&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cses.fi/problemset/task/2192&quot;&gt;CSES - Point in Polygon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;問 $A$ 是在凸多邊形的裡面、外面還是邊界上&lt;/p&gt;
+
+&lt;p&gt;先把在邊界上的情形特判掉後&lt;/p&gt;
+
+&lt;p&gt;從 $A$ 延伸一條無限長的向量 $\vec{AB}$，分兩種情況討論&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\vec{AB}$ 與凸多邊形交點個數為&lt;strong&gt;奇數&lt;/strong&gt; $\Rightarrow$ 裡面&lt;/li&gt;
+  &lt;li&gt;$\vec{AB}$ 與凸多邊形交點個數為&lt;strong&gt;偶數&lt;/strong&gt; $\Rightarrow$ 外面&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但延伸的 $\vec{AB}$ 有可能會跟凸多邊形的頂點相交，這樣就會爛掉&lt;/p&gt;
+
+&lt;p&gt;但若凸多邊形的頂點都在整數點上，那麼只要把 $\vec{AB}$ 設為 $(x_A+\infty, y_A+1)$就不會發生這種情況了&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;凸包&quot;&gt;凸包&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cses.fi/problemset/task/2195&quot;&gt;CSES - Convex Hull&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我會的演算法 : Andrew’s Monotone Chain &lt;a href=&quot;http://web.ntnu.edu.tw/~algo/ConvexHull.html#4&quot;&gt;演算法筆記&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;就是一直維護 $\vec{s[i-2]s[i-1]}\times\vec{s[i-2]s[i] &amp;gt; 0}$&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Feb 2021 08:31:00 +0000</pubDate>
+        <link>/blog/AA-notes-geometry/</link>
+        <guid isPermaLink="true">/blog/AA-notes-geometry/</guid>
+      </item>
+    
+      <item>
+        <title>AA競程同好會-枚舉</title>
+        <description>&lt;h1 id=&quot;枚舉&quot;&gt;枚舉&lt;/h1&gt;
+
+&lt;p&gt;之前就有稍微學過枚舉，下面是一些我第一次知道的東西&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;格雷碼-gray-code&quot;&gt;格雷碼 Gray Code&lt;/h2&gt;
+
+&lt;p&gt;像下面在利用迴圈進行&lt;strong&gt;狀態壓縮&lt;/strong&gt;枚舉的時候，&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;每次會需要再跑一個迴圈去檢查每個位元是否為 &lt;strong&gt;true&lt;/strong&gt;，時間複雜度是 $O(2^n\cdot n)$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;格雷碼&lt;/strong&gt;是在每次枚舉的時候，只改變其中一個 bit，&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;因此不需要多一個迴圈去判斷，複雜度為 $O(2^n)$&lt;/p&gt;
+
+&lt;p&gt;操作很簡單，兩個步驟循環 :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;改變第一個 bit&lt;/li&gt;
+  &lt;li&gt;改變從右數來第一個為 1 的左邊的 bit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;舉例 :&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;00
+01
+11
+10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 &lt;a href=&quot;https://cses.fi/problemset/task/2205/&quot;&gt;CSES - Gray Code&lt;/a&gt; 中，為了方便輸出所以使用string去處理&lt;/p&gt;
+
+&lt;p&gt;但實際應用的時候總不可能用字串，所以就自己想了一下用位元運算方法&lt;/p&gt;
+
+&lt;p&gt;可以利用 &lt;strong&gt;lowbit&lt;/strong&gt; 的方法找快速找出第二步要的 bit，然後左移 1 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xor&lt;/code&gt; 一下就好了&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#define lowbit(x) ((x)&amp;amp;(-x))
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GrayCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        
+        &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;perm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowbit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;perm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;但格雷碼基本上好像不會用到www&lt;/p&gt;
+
+&lt;p&gt;直接遞迴枚舉也可以做到同樣的效果&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;一個我覺得有趣的東西&quot;&gt;一個我覺得有趣的東西&lt;/h2&gt;
+
+&lt;p&gt;在 &lt;a href=&quot;https://atcoder.jp/contests/abc119/tasks/abc119_c&quot;&gt;AtCoder ABC119 C&lt;/a&gt; 這個問題中，我原本的寫法是做兩次枚舉，&lt;/p&gt;
+
+&lt;p&gt;一次枚舉子集，一次枚舉 $N-3$ 個合併操作的方法，雖然 &lt;strong&gt;&lt;span style=&quot;color:lightgreen&quot;&gt;AC&lt;/span&gt;&lt;/strong&gt; 了，但我覺得我寫的超醜，所以去看別人怎麼寫的，&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://atcoder.jp/contests/abc119/submissions/4369435&quot;&gt;Submission #4369435&lt;/a&gt; 我看不懂他怎麼寫的就跑去問了電仁，總之我只講一下他的技巧，&lt;/p&gt;
+
+&lt;p&gt;以下才是重點ww&lt;/p&gt;
+
+&lt;p&gt;他是開 $2N$ 個 bit，用 2 個 bit 去表示一個物品的狀態，超酷ㄉ啦&lt;/p&gt;
+
+&lt;p&gt;我之前都沒想過可以不只用 1 個 bit 去&lt;strong&gt;狀態壓縮&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;同理也可以用好幾個 bit 去表示一個狀態&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Feb 2021 10:12:00 +0000</pubDate>
+        <link>/blog/AA-notes-brute-force/</link>
+        <guid isPermaLink="true">/blog/AA-notes-brute-force/</guid>
+      </item>
+    
+      <item>
+        <title>Hello, Blog!</title>
+        <description>&lt;p&gt;文章我無法用英文寫，我弱QQ&lt;/p&gt;
+
+&lt;p&gt;哦耶，網站終於搞好了QQ&lt;/p&gt;
+
+&lt;p&gt;我是用 jekyll，github官方教學真的很不清楚@@&lt;/p&gt;
+
+&lt;p&gt;我一直以為是要clone別人的下來然後要再自己調適一下環境&lt;/p&gt;
+
+&lt;p&gt;結果我搞超久還弄不成&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;之後我就去看別人CP blog好像很多用Hexo的，所以就去研究了一下&lt;/p&gt;
+
+&lt;p&gt;裡面我覺得很多都大同小異，而且我想要dark-theme的&lt;/p&gt;
+
+&lt;p&gt;有幾個我看是不錯，也有架出來，但都簡體字 = =，所以就放棄了，還是回來繼續研究  jekyll&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;之後發現 https://jekyll-themes.com/ 每個theme底下其實有教學zz&lt;/p&gt;
+
+&lt;p&gt;才知道只要簡單按一下 fork 就好了 = =&lt;/p&gt;
+
+&lt;p&gt;然後改一改一些檔案就好了&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;開 blog 的原因看我 FB 應該就可以知道了&lt;/p&gt;
+
+&lt;p&gt;總之就是想加強自己競程的實力&lt;/p&gt;
+
+&lt;p&gt;所以會在這裡紀錄，對 就醬&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Feb 2021 07:42:00 +0000</pubDate>
+        <link>/blog/hello-blog/</link>
+        <guid isPermaLink="true">/blog/hello-blog/</guid>
+      </item>
+    
+
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title></title>
+            <description>&lt;h3&gt;  {{ page.title }} &lt;/h3&gt;
+
+&lt;div id=&quot;categories&quot;&gt;
+{% for tag in site.tags %}
+  &lt;div class=&quot;category-box&quot; &gt;
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    &lt;div id=&quot;#{{ tag_name | slugize }}&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;tag-head&quot;&gt;&lt;a href=&quot;{{ site.baseurl }}/blog/categories/{{ tag_name }}&quot;&gt;{{ tag_name }}&lt;/a&gt;&lt;/h4&gt;
+    &lt;a name=&quot;{{ tag_name | slugize }}&quot;&gt;&lt;/a&gt;
+     {% for post in site.tags[tag_name] %}
+    &lt;article class=&quot;center&quot;&gt;
+      &lt;h6 &gt;&lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&gt;{{post.title}}&lt;/a&gt;&lt;/h6&gt;
+    &lt;/article&gt;
+
+    {% endfor %}
+    
+  &lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+
+
+</description>
+            <link>/blog/tags/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title></title>
+            <description>&lt;h3&gt;  {{ page.title }} &lt;/h3&gt;
+
+&lt;div id=&quot;categories&quot;&gt;
+{% for category in site.categories %}
+  &lt;div class=&quot;category-box&quot; &gt;
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    &lt;div id=&quot;#{{ category_name | slugize }}&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;category-head&quot;&gt;&lt;a href=&quot;{{ site.baseurl }}/blog/categories/{{ category_name }}&quot;&gt;{{ category_name }}&lt;/a&gt;&lt;/h4&gt;
+    &lt;a name=&quot;{{ category_name | slugize }}&quot;&gt;&lt;/a&gt;
+     {% for post in site.categories[category_name] %}
+    &lt;article class=&quot;center&quot;&gt;
+      &lt;h6 &gt;&lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&gt;{{post.title}}&lt;/a&gt;&lt;/h6&gt;
+    &lt;/article&gt;
+
+
+    {% endfor %}
+
+  &lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+
+
+</description>
+            <link>/blog/categories/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Chat</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.chat %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/chat/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Contest</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.contest %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/contest/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Guides</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.guides %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/guides/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Get Started</title>
+            <description>## Getting Started - How to use “devlopr-jekyll” theme
+
+## What's Jekyll ?
+
+If you aren’t familiar with Jekyll yet, you should know that it is a static site generator. It will transform your plain text into static websites and blogs. No more databases, slow loading websites, risk of being hacked…just your content. And not only that, with Jekyll you get free hosting with GitHub Pages! If you are a beginner we recommend you start with [Jekyll’s Docs](https://jekyllrb.com/docs/installation/). Now, if you know how to use Jekyll, let’s move on to using this theme in Jekyll:
+
+### Steps to create your blog using devlopr-jekyll and Host using Github Pages :
+
+&gt;  **Step 1.**  Fork the repo - [click here](https://github.com/sujaykundu777/devlopr-jekyll/fork)
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork1.png){:class=&quot;img-fluid&quot;}
+
+&gt; **Step 2.** Use **your-github-username.github.io** as the new repo  ( Replace your-github-username with yours). Remember if you use the name other than your-github-username.github.io , your blog will be built using gh-pages branch.
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork2.png){:class=&quot;img-fluid&quot;}
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork3.png){:class=&quot;img-fluid&quot;}
+
+&gt; **Step 3.** Clone the new repo locally to make changes :
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork31.png){:class=&quot;img-fluid&quot;}
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork32.png){:class=&quot;img-fluid&quot;}
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork33.png){:class=&quot;img-fluid&quot;}
+
+```bash
+ $ git clone https://github.com/yourusername/yourusername.github.io
+ $ cd yourusername.github.io
+ $ code .
+```
+
+&gt; **Step 4.** Open the files using VSCode and edit _config.yml and edit with your details:
+
+- _config.yml file - replace with your own details
+- _posts - Add your blog posts here
+- _includes - You can replace the contents of the files with your data. (contains widgets)
+- _assets/img - Add all your images here
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork34.png){:class=&quot;img-fluid&quot;}
+
+&gt; **Step 5** - Install the development requirements:
+
+### Set up local development environment
+
+1. [Git](https://git-scm.com/)
+2. [Ruby](https://www.ruby-lang.org/) and [Bundler](https://bundler.io/)
+3. [VSCode](https://code.visualstudio.com/download)
+
+We need ruby and bundler to build our site locally. After installation check if its working:
+
+For ruby :
+
+```bash
+$ ruby -v
+ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
+```
+For bundler :
+
+```bash
+$ gem install bundler
+$ bundler -v
+Bundler version 2.1.4
+```
+Add jekyll :
+
+```bash
+$ bundle add jekyll
+```
+ This command will add the Jekyll gem to our Gemfile and install it to the ./vendor/bundle/ folder.
+
+You can check the jekyll version
+
+```
+$ bundle exec jekyll -v
+jekyll 4.0.0
+```
+
+&gt; **Step 6.** Install the gem dependencies by running the following command
+
+```bash
+$ bundle update
+$ bundle install
+```
+
+&gt; **Step 7.** Serve the site locally by running the following command below:
+
+```bash
+$ bundle exec jekyll serve --watch
+```
+or you can also serve using :
+
+```bash
+$ jekyll serve
+```
+
+Visit [http://localhost:4000](http://localhost:4000) for development server
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork4.png){:class=&quot;img-fluid&quot;}
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork41.png){:class=&quot;img-fluid&quot;}
+
+### Adding Content
+
+Start populating your blog by adding your .md files in _posts. devlopr-jekyll already has a few examples.
+
+#### YAML Post Example:
+
+```yml
+---
+layout: post
+title: Sample Post
+author: Sujay Kundu
+date: '2019-05-21 14:35:23 +0530'
+category:
+        - jekyll
+summary: This is the summary for the sample post
+thumbnail: sample.png
+---
+
+Hi ! This is sample post.
+
+```
+
+#### YAML Page Example:
+
+```yml
+---
+layout: page
+title: Sample Page
+menus: header
+permalink: /sample-page/
+---
+
+Hi ! This is sample page.
+```
+
+#### Editing stylesheet
+
+You’ll only work with a single file to edit/add theme style: assets/css/main.scss.
+
+### Deploy your Changes
+
+Once happy with your blog changes. Push your changes to master branch.
+
+&gt; **Step 8.** Push Your Local Changes
+
+```bash
+ $ git add .
+ $ git commit -m &quot;my new blog using devlopr-jekyll&quot;
+ $ git push origin master
+```
+
+Visit your Github Repo settings ! Enable master branch as Github Pages Branch :
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork6.png){:class=&quot;img-fluid&quot;}
+
+&gt; **Step 9.** Deploy your Blog :
+
+![Devlopr Jekyll Repo](/assets/img/posts/fork7.png){:class=&quot;img-fluid&quot;}
+
+&gt; Congrats ! On your new shining Blog !
+
+You can visit the blog using [http://your-github-username.github.io](http://your-github-username.github.io).
+
+</description>
+            <link>/get-started/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Jekyll</title>
+            <description>&lt;h5&gt; Posts by Tag : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.tags.jekyll %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/tags/jekyll</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Jekyll</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.jekyll %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/jekyll/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Math</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.math %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/math/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Modulo</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.modulo %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;</description>
+            <link>/blog/categories/modulo/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Notes</title>
+            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+{% for post in site.categories.notes %}
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/div&gt;
+
+</description>
+            <link>/blog/categories/notes/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Styleguide</title>
+            <description>&lt;h1 class=&quot;text-center&quot;&gt; devlopr jekyll - Styleguide &lt;/h1&gt;
+
+&lt;hr /&gt;
+
+ &lt;img src=&quot;/assets/img/styleguide.png&quot; class=&quot;img-fluid&quot;&gt;
+
+&lt;p&gt; Lets try the different text styles  &lt;b&gt; Bold &lt;/b&gt; , &lt;strong&gt; Strong &lt;/strong&gt;, &lt;em&gt; Emphasis &lt;/em&gt;, &lt;i&gt; Italic &lt;/i&gt; &lt;/p&gt;
+
+
+&lt;p&gt; Now, lets try different heading styles : &lt;/p&gt;
+
+&lt;h1&gt; Hello in h1 ! &lt;/h1&gt;
+&lt;h2&gt; Hello in h2 ! &lt;/h2&gt;
+&lt;h3&gt; Hello in h3 ! &lt;/h3&gt;
+&lt;h4&gt; Hello in h4 ! &lt;/h4&gt;
+&lt;h5&gt; Hello in h5 ! &lt;/h5&gt;
+&lt;h6&gt; Hello in h6 ! &lt;/h6&gt;
+
+&lt;hr /&gt;
+&lt;p&gt; Unordered List &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; List Item 1 &lt;/li&gt;
+&lt;li&gt; List Item 2 &lt;/li&gt;
+&lt;li&gt; List Item 3 &lt;/li&gt;
+&lt;li&gt; List Item 4 &lt;/li&gt;
+&lt;li&gt; List Item 5 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; Ordered List &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt; List Item 1 &lt;/li&gt;
+&lt;li&gt; List Item 2 &lt;/li&gt;
+&lt;li&gt; List Item 3 &lt;/li&gt;
+&lt;li&gt; List Item 4 &lt;/li&gt;
+&lt;li&gt; List Item 5 &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a Block Quote,  It can Expand Multiple Lines &lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text. &lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt; This line of text is meant to be deleted text &lt;/del&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;div class=&quot;responsive-table&quot;&gt;
+&lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+          &lt;td&gt;Cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3&gt;YouTube Responsive Embed&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nuwjUZCSB2Y?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h3&gt;Vimeo Responsive Embed&lt;/h3&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/212114694?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;ted-responsive-embed&quot;&gt;TED Responsive Embed&lt;/h3&gt;
+
+&lt;iframe src=&quot;https://embed.ted.com/talks/ted_halstead_a_climate_solution_where_all_sides_can_win&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;twitch-responsive-embed&quot;&gt;Twitch Responsive Embed&lt;/h3&gt;
+
+&lt;iframe src=&quot;https://player.twitch.tv/?autoplay=false&amp;amp;video=v248755437&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; scrolling=&quot;no&quot; height=&quot;378&quot; width=&quot;620&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;soundcloud-embed&quot;&gt;SoundCloud Embed&lt;/h3&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29738591&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;codepen-embed&quot;&gt;CodePen Embed&lt;/h3&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWvpRo&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;kharrop&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Referral Form&quot; class=&quot;codepen&quot;&gt;&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;syntax-highlighting&quot;&gt;Syntax Highlighting&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;s1&quot;&gt;'use strict'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;markdown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'markdown'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Editor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;preview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;preview&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toHTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;editor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can add inline code just like this, E.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;.code { color: #fff; }&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;pre&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#f4f4f4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;github-gist-embed&quot;&gt;GitHub gist Embed&lt;/h3&gt;
+
+&lt;script src=&quot;https://gist.github.com/ahmadajmi/dbb4f713317721668bcbc39420562afc.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;input-style&quot;&gt;Input Style&lt;/h3&gt;
+
+&lt;p&gt;&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3&gt; Twitter Embed &lt;/h3&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I just published “Deploying a blog using Jekyll and Github Pages with SSL certificate for Free” &lt;a href=&quot;https://t.co/B3T3IQVU93&quot;&gt;https://t.co/B3T3IQVU93&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sujay Kundu (@SujayKundu777) &lt;a href=&quot;https://twitter.com/SujayKundu777/status/1012601950469160962?ref_src=twsrc%5Etfw&quot;&gt;June 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h3&gt; Instagram Embed &lt;/h3&gt;
+
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/BhFTg6uhNRi/&quot; data-instgrm-version=&quot;9&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/BhFTg6uhNRi/&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Ahmad Ajmi (@ahmadajme)&lt;/a&gt; on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2018-04-02T21:18:58+00:00&quot;&gt;Apr 2, 2018 at 2:18pm PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt; &lt;script async defer src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
+
+</description>
+            <link>/styleguide/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+  </channel>
+</rss>
