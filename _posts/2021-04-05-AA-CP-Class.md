@@ -3,7 +3,7 @@ layout: post
 title:  "AA競程特製班 Week 1"
 summary: "參加AA競程學到的一些東西，內容不開放"
 author: jorrhukmb
-date: '2021-04-05 16:31:00 +0800'
+date: '2021-04-11 14:45:00 +0800'
 category: notes
 thumbnail: /assets/img/posts/Kawaii2.gif
 keywords: blog, AA, dreamoon
